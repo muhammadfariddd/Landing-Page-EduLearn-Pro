@@ -1,0 +1,156 @@
+:root {
+  --custom-primary-color: #ad49e1;
+  --custom-secondary-color: #7a1cac;
+  --custom-basic-color: #ebd3f8;
+}
+
+.btn-primary {
+  background-color: var(--custom-primary-color);
+  border-color: var(--custom-primary-color);
+}
+
+.btn-primary:hover {
+  border-color: var(--custom-secondary-color);
+  background-color: var(--custom-secondary-color);
+}
+
+.text-secondary {
+  color: var(--custom-primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--custom-secondary-color) !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background-color: var(--custom-secondary-color);
+}
+
+#register .container,
+#about,
+#about .list-group-item,
+#demo {
+  background-color: var(--custom-basic-color);
+}
+
+#register,
+footer,
+.register {
+  background-color: var(--custom-primary-color);
+}
+
+.register:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+#hero {
+  background: url(../images/close-up-hand-taking-notes.jpg) center/cover
+    no-repeat;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.section-title .line,
+#pricing .line,
+#demo .line {
+  width: 70px;
+  height: 4px;
+  background-color: var(--custom-primary-color);
+  margin: 16px auto 24px auto;
+}
+
+.iconbox {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--custom-primary-color);
+  color: var(--custom-basic-color);
+  font-size: 34px;
+  flex: none;
+}
+
+.list-group-flush .list-group-item {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#pricing .card {
+  cursor: pointer;
+  border: 2px solid var(--custom-primary-color);
+  transition: 0.2s all linear;
+}
+
+#pricing .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 1rem 1rem 0 var(--custom-primary-color);
+}
+
+#pricing .card:hover table,
+#pricing .card:hover td {
+  background-color: transparent;
+}
+
+#pricing .card:hover a {
+  color: var(--custom-primary-color);
+  border: 2px solid var(--custom-primary-color);
+  background: none;
+}
+
+video {
+  border: 7px solid var(--custom-primary-color);
+}
+
+/* Form CSS*/
+
+.form-select:hover,
+.form-select option:hover,
+.form-check-input:hover,
+.form-check-label:hover {
+  cursor: pointer;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+#register .form-control {
+  transition: all 0.3s linear;
+}
+
+#register .form-control:focus,
+#register .form-select:focus {
+  border-color: var(--custom-primary-color);
+  outline: none;
+  box-shadow: var(--custom-primary-color) 0px 0px 0px 3px;
+}
+
+#register .btn-primary:active {
+  background-color: var(--custom-primary-color);
+  border-color: var(--custom-primary-color);
+}

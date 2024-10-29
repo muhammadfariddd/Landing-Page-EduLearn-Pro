@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start  -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      data-bs-theme="dark"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <!-- <a class="navbar-brand fw-bold text-white" href="#">EduLearn Pro</a> -->
+        <a class="navbar-brand" href="https://edulearn.io/">
+          <img
+            src="src/images/edulearn-logo.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class=""
+          />
+          EduLearn Pro
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active me-3" aria-current="page" href="#"
+              ><i class="bi bi-house-door-fill"></i> Home</a
+            >
+            <a class="nav-link me-3" href="#about"
+              ><i class="bi bi-file-earmark-person-fill"></i> About</a
+            >
+            <a class="nav-link me-3" href="#pricing"
+              ><i class="bi bi-tags-fill"></i> Pricing</a
+            >
+            <a class="nav-link" href="#demo"
+              ><i class="bi bi-play-btn-fill"></i> Demo</a
+            >
+          </div>
+          <a
+            class="btn register ms-auto rounded-pill px-3 my-2 my-md-0"
+            href="register.html"
+            role="button"
+            >Register</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Start  -->
+
+    <!-- Hero Section Start  -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1
+              class="text-uppercase fw-semibold display-3 text-white"
+              data-aos="zoom-in-up"
+            >
+              Welcome to EduLearn Pro
+            </h1>
+            <h5
+              class="text-uppercase text-white mt-3 mb-5"
+              data-aos="zoom-in-up"
+            >
+              Learn anywhere, anytime! EduLearn Pro presents thousands of
+              quality materials with easy-to-understand methods. Make your
+              dreams come true with us!
+            </h5>
+            <div>
+              <a
+                href="#"
+                role="button"
+                class="btn btn-primary fw-semibold fs-4 px-4 py-2 me-2"
+                data-aos="fade-right"
+                >About Us</a
+              >
+              <a
+                href="#"
+                class="btn btn-light fw-semibold fs-4 px-4 py-2 ms-2"
+                role="button"
+                data-aos="fade-left"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End  -->
+
+    <!-- About Us Section Start  -->
+    <section id="about" class="section-padding py-3 pb-5">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <!-- Section Title -->
+          <div class="col-12" data-aos="fade-up">
+            <div class="section-title my-5 text-center">
+              <h1 class="fw-semibold">About Us</h1>
+              <div class="line"></div>
+              <p class="mx-auto mx-md-5">
+                We offer thousands of courses covering a wide range of fields
+                such as technology, business, design, and more.
+              </p>
+            </div>
+          </div>
+
+          <!-- Left Section: Image -->
+          <div
+            class="col-lg-6 d-flex justify-content-center mb-5 mb-lg-0 pe-md-5"
+            data-aos="fade-right"
+          >
+            <img
+              src="src/images/edulearn-logo.png"
+              alt="EduLearn Logo"
+              width="370"
+              class="img-fluid"
+            />
+          </div>
+
+          <!-- Right Section: Features List -->
+          <div
+            class="col-lg-6 d-flex justify-content-center ps-md-5"
+            data-aos="fade-left"
+          >
+            <ul class="list-group list-group-flush">
+              <h2 class="mb-4">Features</h2>
+              <!-- Feature Item -->
+              <li class="list-group-item d-flex align-items-start">
+                <div class="iconbox me-3 rounded">
+                  <i class="bi bi-book"></i>
+                </div>
+                <div>
+                  <h5>Complete Course</h5>
+                  <p>Thousands of courses covering a wide range of fields</p>
+                </div>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <div class="iconbox me-3 rounded">
+                  <i class="bi bi-brightness-high"></i>
+                </div>
+                <div>
+                  <h5>Interactive Learning</h5>
+                  <p>
+                    Learning videos, quizzes, and final projects to test and
+                    deepen user understanding.
+                  </p>
+                </div>
+              </li>
+              <li class="list-group-item d-flex align-items-start">
+                <div class="iconbox me-3 rounded">
+                  <i class="bi bi-award"></i>
+                </div>
+                <div>
+                  <h5>Online Certificate</h5>
+                  <p>
+                    Earn a digital certificate after completing an
+                    industry-recognized course.
+                  </p>
+                </div>
+              </li>
+              <!-- Additional Feature Items can go here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- Pricing Card Section Start  -->
+    <div id="pricing" class="section-padding pt-5 my-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mb-5" data-aos="fade-up">
+            <h1 class="fw-semibold">Pricing Plans</h1>
+            <div class="line mb-4"></div>
+            <p class="lead">Choose a plan that fits your learning needs.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up">
+            <div class="card rounded-4 py-3">
+              <div class="card-body text-center">
+                <h3 class="card-title fw-bold fs-3">Basic</h3>
+                <p class="card-text fw-bold fs-5 my-3">Free</p>
+                <table class="table table-borderless mt-5">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i class="bi bi-check-circle"></i> Access to 30+ courses
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i class="bi bi-check-circle"></i> No Certificated
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i class="bi bi-check-circle"></i> Community Support
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="btn btn-primary px-3 py-2 mt-4 fw-semibold"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up">
+            <div class="card rounded-4 py-3">
+              <div class="card-body text-center">
+                <h3 class="card-title fw-bold fs-3">Pro</h3>
+                <p class="card-text fw-bold fs-5 my-3">
+                  <sup>$</sup>10<sub>/month</sub>
+                </p>
+                <table class="table table-borderless mt-5">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i class="bi bi-check-circle"></i> Access to 100+
+                        courses
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i class="bi bi-check-circle"></i> Earn Certificates
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i class="bi bi-check-circle"></i> Priority Support
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="btn btn-primary px-3 py-2 mt-4 fw-semibold"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up">
+            <div class="card rounded-4 py-3">
+              <div class="card-body text-center">
+                <h3 class="card-title fw-bold fs-3">Enterprise</h3>
+                <p class="card-text fw-bold fs-5 my-3">
+                  <sup>$</sup>25<sub>/month</sub>
+                </p>
+                <table class="table table-borderless mt-5">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i class="bi bi-check-circle"></i> Unlimited courses
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i class="bi bi-check-circle"></i> Team Management
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="bi bi-check-circle"></i> 24/7 Support</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="btn btn-primary px-3 py-2 mt-4 fw-semibold"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing Card Section End  -->
+
+    <!-- Demo Section Start  -->
+    <section id="demo" class="section-padding py-5">
+      <div class="container">
+        <div class="col-12 text-center mb-5" data-aos="fade-up">
+          <h1 class="fw-semibold">Demo Application</h1>
+          <div class="line mb-4"></div>
+          <p class="lead">
+            Explore our demo to find the perfect learning solution for you.
+          </p>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center">
+          <video controls class="rounded shadow w-75" data-aos="zoom-in-up">
+            <source src="src/video/demo_application.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+    <!-- Demo Section End  -->
+
+    <!-- Footer Section Start  -->
+    <footer class="text-light pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-right">
+            <h5 class="fw-bold text-uppercase">Contact Us</h5>
+            <p class="small mb-2">
+              <i class="bi bi-geo-alt me-2"></i>Burung Jaya Street, Jepara City,
+              Indonesia
+            </p>
+            <p class="small mb-2">
+              <i class="bi bi-envelope me-2"></i>ilhamfaridjepara@gmail.com
+            </p>
+            <p class="small mb-2">
+              <i class="bi bi-telephone me-2"></i>+62-895-363-64-8153
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-right">
+            <h5 class="fw-bold text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="text-light text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="text-light text-decoration-none"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#demo" class="text-light text-decoration-none">Demo</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-right">
+            <h5 class="fw-bold text-uppercase">Follow Us</h5>
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-md-start"
+            >
+              <a
+                href="https://github.com/muhammadfariddd"
+                class="text-light fs-4"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/farid.sugi/"
+                class="text-light fs-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://www.tiktok.com/@devsugi" class="text-light fs-4"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-fariddd/"
+                class="text-light fs-4"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="bg-light my-4" />
+
+        <div class="text-center small">
+          &copy; 2024 Muhammad Farid. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End  -->
+
+    <!-- Script AOS  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, duration: 1000 });
+    </script>
+
+    <!-- Script Bootstrap  -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
