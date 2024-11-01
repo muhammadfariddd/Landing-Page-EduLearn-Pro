@@ -23,3 +23,20 @@ function showAlert() {
     });
   }
 }
+
+// GSAP Animation
+gsap.registerPlugin(TextPlugin);
+gsap.to("#hero h1", {
+  duration: 2,
+  delay: 1,
+  repeat: -1,
+  text: "Welcome to EduLearn Pro",
+});
+gsap.from("nav", { duration: 2, y: "-100%", opacity: 0, ease: "bounce" });
+gsap.from("#hero h5", {
+  duration: 1,
+  x: -50,
+  opacity: 0,
+  delay: 1.5,
+  ease: "power2.out",
+});

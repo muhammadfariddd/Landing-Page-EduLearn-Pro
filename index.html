@@ -33,11 +33,7 @@
   </head>
   <body>
     <!-- Navbar Start  -->
-    <nav
-      class="navbar navbar-expand-lg sticky-top"
-      data-bs-theme="dark"
-      data-aos="fade-down"
-    >
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
       <div class="container">
         <!-- <a class="navbar-brand fw-bold text-white" href="#">EduLearn Pro</a> -->
         <a class="navbar-brand" href="https://edulearn.io/">
@@ -95,16 +91,8 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1
-              class="text-uppercase fw-semibold display-3 text-white"
-              data-aos="zoom-in-up"
-            >
-              Welcome to EduLearn Pro
-            </h1>
-            <h5
-              class="text-uppercase text-white mt-3 mb-5"
-              data-aos="zoom-in-up"
-            >
+            <h1 class="text-uppercase fw-semibold display-3 text-white"></h1>
+            <h5 class="text-uppercase text-white mt-3 mb-5">
               Learn anywhere, anytime! EduLearn Pro presents thousands of
               quality materials with easy-to-understand methods. Make your
               dreams come true with us!
@@ -115,6 +103,8 @@
                 role="button"
                 class="btn btn-primary fw-semibold fs-4 px-4 py-2 me-2"
                 data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-duration="4000"
                 >About Us</a
               >
               <a
@@ -122,6 +112,8 @@
                 class="btn btn-light fw-semibold fs-4 px-4 py-2 ms-2"
                 role="button"
                 data-aos="fade-left"
+                data-aos-delay="200"
+                data-aos-duration="4000"
                 >Register</a
               >
             </div>
@@ -416,10 +408,16 @@
     <!-- Script AOS  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({ once: true, duration: 1000 });
+      AOS.init({ once: true, duration: 1500 });
     </script>
+
+    <!-- Script GSAP  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 
     <!-- Script Bootstrap  -->
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="src/js/script.js"></script>
   </body>
 </html>
